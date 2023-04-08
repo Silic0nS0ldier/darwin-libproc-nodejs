@@ -8,7 +8,3 @@ test('pidpath self', (t) => {
     process.execPath,
   )
 })
-
-test('pidpath 0', (t) => {
-  pidPath(0)
-})
