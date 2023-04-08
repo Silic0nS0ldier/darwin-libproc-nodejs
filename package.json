@@ -1,5 +1,5 @@
 {
-  "name": "darwin-libproc",
+  "name": "@silicon-soldier/darwin-libproc",
   "version": "0.0.0",
   "main": "index.js",
   "types": "index.d.ts",

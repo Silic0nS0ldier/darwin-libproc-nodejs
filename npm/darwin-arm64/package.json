@@ -1,5 +1,5 @@
 {
-  "name": "darwin-libproc-darwin-arm64",
+  "name": "@silicon-soldier/darwin-libproc-darwin-arm64",
   "version": "0.0.0",
   "os": [
     "darwin"
