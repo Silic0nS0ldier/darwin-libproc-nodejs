@@ -1,7 +1,14 @@
 import test from 'ava'
 
-import { sum } from '../index.js'
+import { pidPath } from '../index.js'
 
-test('sum from native', (t) => {
-  t.is(sum(1, 2), 3)
+test('pidpath self', (t) => {
+  t.is(
+    pidPath(process.pid),
+    process.execPath,
+  )
+})
+
+test('pidpath 0', (t) => {
+  pidPath(0)
 })
