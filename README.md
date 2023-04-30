@@ -1,4 +1,4 @@
-# @silicon-soldier/darwin-libproc
+# `@silicon-soldier/darwin-libproc`
 
 High-level interface over darwin's `libproc` library.
 
