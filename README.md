@@ -69,3 +69,8 @@ The crate `darwin-libproc@0.2.0` acts as a safe and idiomatic wrapper over `darw
 | `uid_only_pids` | ✗ |
 | `version` | ✗ |
 | `vnode_path_info` | ✗ |
+
+## See Also
+
+- [@silicon-soldier/windows-psapi](https://github.com/Silic0nS0ldier/windows-psapi-nodejs) for Windows
+- `proc/{pid}/` for Linux
