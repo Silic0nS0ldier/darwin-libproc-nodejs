@@ -1,6 +1,6 @@
 {
   "name": "@silicon-soldier/darwin-libproc",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "High-level interface over darwin's libproc library.",
   "main": "lib/index.node",
   "types": "lib/index.d.ts",
