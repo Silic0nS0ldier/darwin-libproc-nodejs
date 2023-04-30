@@ -1,37 +1,36 @@
 {
   "name": "@silicon-soldier/darwin-libproc",
   "version": "0.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "index.node",
   "types": "index.d.ts",
-  "napi": {
-    "name": "darwin-libproc",
-    "triples": {
-      "defaults": false,
-      "additional": [
-        "aarch64-apple-darwin",
-        "x86_64-apple-darwin"
-      ]
-    }
+  "scripts": {
+    "build": "cargo-cp-artifact --artifact cdylib __darwin-libproc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "npm run build --",
+    "build-release": "npm run build -- --release",
+    "install": "npm run build-release",
+    "test": "cargo test"
   },
+  "author": "Jordan Mele <SiliconSoldier@outlook.com.au> (https://djmm.me/)",
   "license": "MIT",
   "devDependencies": {
-    "@napi-rs/cli": "^2.15.2",
-    "ava": "^5.1.1"
+    "cargo-cp-artifact": "^0.1"
   },
-  "ava": {
-    "timeout": "3m"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silic0nS0ldier/darwin-libproc-nodejs.git"
   },
-  "engines": {
-    "node": ">= 10"
+  "keywords": [
+    "libproc",
+    "pidpath",
+    "darwin"
+  ],
+  "bugs": {
+    "url": "https://github.com/Silic0nS0ldier/darwin-libproc-nodejs/issues"
   },
-  "scripts": {
-    "artifacts": "napi artifacts",
-    "build": "napi build --platform --release",
-    "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
-    "universal": "napi universal",
-    "version": "napi version"
-  },
-  "packageManager": "yarn@3.5.0"
+  "homepage": "https://github.com/Silic0nS0ldier/darwin-libproc-nodejs#readme",
+  "files": [
+    "index.d.ts",
+    "index.node"
+  ]
 }
