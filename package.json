@@ -1,11 +1,11 @@
 {
   "name": "@silicon-soldier/darwin-libproc",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.node",
-  "types": "index.d.ts",
+  "description": "High-level interface over darwin's libproc library.",
+  "main": "lib/index.node",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "cargo-cp-artifact --artifact cdylib __darwin-libproc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build": "cd crate ; cargo-cp-artifact --artifact cdylib __darwin-libproc ../lib/index.node -- cargo build --message-format=json-render-diagnostics",
     "build-debug": "npm run build --",
     "build-release": "npm run build -- --release",
     "install": "npm run build-release",
@@ -30,7 +30,6 @@
   },
   "homepage": "https://github.com/Silic0nS0ldier/darwin-libproc-nodejs#readme",
   "files": [
-    "index.d.ts",
-    "index.node"
+    "lib/**"
   ]
 }
